@@ -24,8 +24,8 @@ def main():
 
     try:
         value = p1.age
-    except AttributeError:
-        print("No value")
+    except AttributeError as att:
+        print("No value : {}".format(att))
 
 if __name__=='__main__':
     main()
