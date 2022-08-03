@@ -11,15 +11,15 @@ class Person:
         print(self.firstname, self.lastname)
 # Child class
 class Student(Person):
-    def __init__(self, firstname, lastname):
+    def __init__(self, firstname, lastname, year):
         # super(): 부모 클래스의 모든 멤버 변수와 멤버 함수를 가져온다
         super().__init__(firstname, lastname)
-        self.graduationyear = 2019
+        self.graduationyear = year
 def main():
     p1 = Person("John", "Doe")
     p1.printname()
 
-    p2 = Student("Mike", "Olsen")
+    p2 = Student("Mike", "Olsen", 2019)
     p2.printname()
     print(p2.graduationyear)
 
